@@ -1,20 +1,43 @@
 <template>
-  <div class="name" data-text="I'm Fatih Tuzun">I'm Fatih Tuzun</div>
+
+  <div class="nameapp">
+    <div class="fullname">
+      <div>I'm&nbsp;</div>
+      <div class="name" data-text="Fatih Tüzün">Fatih Tüzün</div>
+
+
+    </div>
+
+    <div>assa</div>
+  </div>
 </template>
 
 <style  scoped>
 /* Colors */
+.nameapp {
+  font-size: 6rem;
+  font-weight: 600;
+  color: var(--secondary);
+  text-align: left;
+}
+
+.fullname {
+  text-align: left;
+  
+
+  display: flex;
+
+}
 
 .name {
   font-family: arial;
   position: relative;
-  color: black;
   text-align: left;
-  font-size: 6rem;
-  font-weight: 600;
+
   max-width: 1200px;
   user-select: none;
 }
+
 .name::before,
 .name::after {
   content: attr(data-text);
@@ -28,7 +51,7 @@
 .name::before {
   left: 2px;
   clip: rect(79px, 1200px, 86px, 0);
-  text-shadow: -2px 0 rgb(255, 115, 0);
+  text-shadow: -2px 0 var(--tertiary);
 
   animation: name-anim-2 1s infinite linear alternate-reverse;
 }
@@ -37,7 +60,7 @@
   /* variation */
   left: -2px;
   clip: rect(79px, 1200px, 86px, 0);
-  text-shadow: -1px 0 rgb(255, 136, 0);
+  text-shadow: -1px 0 var(--tertiary);
 
   animation: name-anim-1 1s infinite linear alternate-reverse;
   animation-delay: -1s;
@@ -61,18 +84,23 @@
   0% {
     clip: rect(20px, 1200px, 76px, 0);
   }
+
   20% {
     clip: rect(19px, 1200px, 16px, 0);
   }
+
   40% {
     clip: rect(16px, 1200px, 3px, 0);
   }
+
   60% {
     clip: rect(62px, 1200px, 78px, 0);
   }
+
   80% {
     clip: rect(25px, 1200px, 13px, 0);
   }
+
   100% {
     clip: rect(53px, 1200px, 86px, 0);
   }

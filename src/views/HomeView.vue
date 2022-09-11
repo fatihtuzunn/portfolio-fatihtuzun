@@ -1,14 +1,19 @@
 <template>
   <div class="home">
     <NavBar />
-    <div>
-      <h1>sadsa</h1>
-      <h1>sadsa</h1>
-      <h1>sadsa</h1>
-      <h1>sadsa</h1>
-      <h1>sadsa</h1>
-    </div>
-    <TriangleJumbotron />
+
+
+    <section class="section">
+      <TriangleJumbotron />
+    </section>
+
+    <section class="section">
+
+    </section>
+
+    <section class="section">
+
+    </section>
   </div>
 </template>
 
@@ -22,10 +27,13 @@ export default {
   components: {
     TriangleJumbotron,
     NavBar
-}
+  }
 }
 </script>
 
 <style>
- 
+.section{
+  
+  height: 100vh;
+}
 </style>

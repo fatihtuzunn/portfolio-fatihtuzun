@@ -1,10 +1,12 @@
 <template>
     <div class="nav">
-        <ul id="category-toggle-list" v-for="(categ,idx) in categories " :key="idx">
-            <li @click="activate(idx)" class="project-category" :class="{ active : active_idx == idx }">
-                <a href="#">{{categ}}</a>
-            </li>
-        </ul>
+        <nav class="navbar">
+            <ul id="category-toggle-list" v-for="(categ,idx) in categories " :key="idx">
+                <li @click="activate(idx)" class="project-category" :class="{ active : active_idx == idx }">
+                    <a href="#">{{categ}}</a>
+                </li>
+            </ul>
+        </nav>
     </div>
 </template>
 
@@ -26,25 +28,30 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .nav {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    z-index: 3;
+    margin-top: 50px;
+    display: block;
+}
+
+.navbar {
+
     display: flex;
     justify-content: flex-end;
-    margin-right: 30px;
+
 
 }
 
-#category-toggle-list {
-    
-    padding: 0;
-    margin: 0;
-    max-width: 1000px;
-}
+
 
 #category-toggle-list li {
-    
+
     width: 95%;
     list-style: none;
     color: rgb(255, 255, 255);

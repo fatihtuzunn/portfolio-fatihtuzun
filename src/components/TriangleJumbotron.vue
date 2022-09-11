@@ -1,11 +1,21 @@
 
 <template>
-
-
     <div class="jumbotron ">
+
+
         <div class="container text-center">
-            <h1 class="display-1 mb-4">RO<br>XY</h1>
+
+           <h1> <AnimatedName /></h1>
+            
+
+            <p>assaas</p>
+
         </div>
+
+
+
+
+
         <div class="rectangle-1"></div>
         <div class="rectangle-2"></div>
         <div class="rectangle-transparent-1"></div>
@@ -31,107 +41,20 @@
 </template>
 
 <script>
+import AnimatedName from "./AnimatedName.vue";
 
-
+export default{
+    components: {
+        AnimatedName
+    }
+}
 
 </script>
 
 
 <style>
-:root {
-  --primary: #e85151;
-  --secondary: #ced9e0;
-  --backg: #22272a;
-}
 
-.jumbotron {
-    display: flex;
-    flex-direction: column; 
-    color: #fff;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    position: relative;
-    border-radius: 0;
-    margin-bottom: 0;
-    overflow: hidden;
-    min-height: 100vh;
-}
-
-@media (max-width: 767px) and (orientation: landscape) {
-    .jumbotron {
-        min-height: 500px;
-    }
-}
-
-.jumbotron .container {
-    position: relative;
-    z-index: 1;
-}
-
-.jumbotron:before {
-    position: absolute;
-    display: block;
-    content: "";
-    opacity: 0.8;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: var(--backg);
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #333399, #ff00cc);
-    /* Chrome 10-25, Safari 5.1-6 */
- /* background: linear-gradient(to right, #333399, #ff00cc); */   
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.jumbotron h1 {
-    line-height: .9;
-    font-weight: bold;
-    display: inline-block;
-    border: 15px solid #fff;
-    padding: 30px;
-    font-size: 9rem;
-    opacity: 0;
-    animation: 1s fadeInFromTop cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s forwards;
-    animation-delay: .8s;
-}
-
-.jumbotron-single h1 {
-    font-size: 3rem !important;
-}
-
-
-
-.rectangle-1 {
-    width: 1000px;
-    height: 400px;
-    background: #8E2DE2;
-    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
-    background: linear-gradient(to right, #4A00E0, #8E2DE2);
-    transform-origin: 50% 50% 0;
-    position: absolute;
-    left: 0;
-    z-index: 0;
-}
-
-.rectangle-2 {
-    width: 2000px;
-    height: 400px;
-    background: #8E2DE2;
-    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
-    background: linear-gradient(to right, #4A00E0, #8E2DE2);
-    transform-origin: 65% 100% 0;
-    position: absolute;
-    right: 0;
-    z-index: 0;
-    transform: scale(1) rotate(50deg);
-}
-
-
+/* ANIMATIONS */
 
 
 @keyframes fade-in-right {
@@ -181,6 +104,106 @@
         transform: translateY(0);
     }
 }
+
+/* ANIMATIONS END */
+
+:root {
+    --primary: #e85151;
+    --secondary: #ced9e0;
+    --backg: #22272a;
+    --tertiary: #4A00E0
+}
+
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    border-radius: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+    .jumbotron {
+        min-height: 500px;
+    }
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron:before {
+    position: absolute;
+    display: block;
+    content: "";
+    opacity: 0.8;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--backg);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #333399, #ff00cc); */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.jumbotron h1 {
+    line-height: .9;
+    font-weight: bold;
+    display:block;
+    border: 15px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, var(--tertiary), var(--primary));
+    padding: 30px;
+    font-size: 9rem;
+    opacity: 0;
+    animation: 1s fadeInFromTop cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s forwards;
+    animation-delay: .8s;
+
+
+    
+}
+
+
+.rectangle-1 {
+    width: 1000px;
+    height: 400px;
+    background: var(--primary);
+    background: -webkit-linear-gradient(to right, var(--tertiary), var(--primary));
+    background: linear-gradient(to right, var(--tertiary), var(--primary));
+    transform-origin: 50% 50% 0;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+}
+
+.rectangle-2 {
+    width: 2000px;
+    height: 400px;
+    background: var(--primary);
+    background: -webkit-linear-gradient(to right, var(--tertiary), var(--primary));
+    background: linear-gradient(to right, var(--tertiary), var(--primary));
+    transform-origin: 65% 100% 0;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    transform: scale(1) rotate(50deg);
+}
+
+
+
+
 
 .rectangle-1 {
     opacity: 0;
