@@ -5,13 +5,16 @@
 
         <div class="container text-center">
 
-           <h1> <AnimatedName /></h1>
-            
+            <h1>
+                <AnimatedName />
+            </h1>
 
-            <p>assaas</p>
+
 
         </div>
-
+        <div class="scrollMouse" @click="scroll">
+            <MouseIcon />
+        </div>
 
 
 
@@ -35,6 +38,9 @@
         <div class="triangle triangle-4">
             <img src="../assets/img/obj_triangle.png" alt="">
         </div>
+
+
+
     </div>
 
 
@@ -42,10 +48,19 @@
 
 <script>
 import AnimatedName from "./AnimatedName.vue";
+import MouseIcon from "./MouseIcon.vue";
 
-export default{
+export default {
     components: {
-        AnimatedName
+        AnimatedName,
+        MouseIcon
+    },
+    methods:{
+        scroll(){
+            const element = document.getElementById('about');
+      element.scrollIntoView({ behavior: 'smooth' });
+        }
+
     }
 }
 
@@ -53,7 +68,6 @@ export default{
 
 
 <style>
-
 /* ANIMATIONS */
 
 
@@ -84,12 +98,12 @@ export default{
 @keyframes grow2 {
     from {
         opacity: 0;
-        transform: scale(2) rotate(50deg);
+        transform: scale(2) rotate(40deg);
     }
 
     to {
         opacity: 1;
-        transform: scale(1) rotate(50deg);
+        transform: scale(1) rotate(40deg);
     }
 }
 
@@ -159,25 +173,32 @@ export default{
 }
 
 .jumbotron h1 {
+    margin-top: 8rem;
     line-height: .9;
     font-weight: bold;
-    display:block;
+    display: block;
     border: 15px solid;
     border-image-slice: 1;
     border-image-source: linear-gradient(to right, var(--tertiary), var(--primary));
-    padding: 30px;
+    padding: 20px;
     font-size: 9rem;
     opacity: 0;
     animation: 1s fadeInFromTop cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s forwards;
     animation-delay: .8s;
 
 
-    
+
 }
 
+.scrollMouse {
+    position: absolute;
+    right: 50%;
+    top: 100%;
+    cursor: pointer;
+}
 
 .rectangle-1 {
-    width: 1000px;
+    width: 1500px;
     height: 400px;
     background: var(--primary);
     background: -webkit-linear-gradient(to right, var(--tertiary), var(--primary));
@@ -189,7 +210,7 @@ export default{
 }
 
 .rectangle-2 {
-    width: 2000px;
+    width: 1500px;
     height: 400px;
     background: var(--primary);
     background: -webkit-linear-gradient(to right, var(--tertiary), var(--primary));
@@ -198,7 +219,7 @@ export default{
     position: absolute;
     right: 0;
     z-index: 0;
-    transform: scale(1) rotate(50deg);
+    transform: scale(1) rotate(60deg);
 }
 
 
@@ -222,8 +243,8 @@ export default{
     height: 500px;
     border: 15px solid rgba(255, 255, 255, 0.08);
     position: absolute;
-    left: -5%;
-    bottom: -10%;
+    left: -10%;
+    bottom: 12%;
     display: block;
     animation: floating-slow ease-in-out 12s infinite;
 }

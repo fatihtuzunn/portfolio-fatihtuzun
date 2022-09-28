@@ -1,14 +1,13 @@
 <template>
 
   <div class="nameapp">
+    <div id="hello">Hello!</div>
     <div class="fullname">
       <div>I'm&nbsp;</div>
       <div class="name" data-text="Fatih Tüzün">Fatih Tüzün</div>
-
-
     </div>
 
-    <div>assa</div>
+    <div>Frontend Developer</div>
   </div>
 </template>
 
@@ -18,14 +17,21 @@
   font-size: 6rem;
   font-weight: 600;
   color: var(--secondary);
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+#hello{
+  color: var(--primary);
+}
 .fullname {
-  text-align: left;
   
-
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2rem 0;
 
 }
 

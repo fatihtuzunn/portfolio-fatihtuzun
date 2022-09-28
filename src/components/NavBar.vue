@@ -3,7 +3,7 @@
         <nav class="navbar">
             <ul id="category-toggle-list" v-for="(categ,idx) in categories " :key="idx">
                 <li @click="activate(idx)" class="project-category" :class="{ active : active_idx == idx }">
-                    <a href="#">{{categ}}</a>
+                    <a :href="'#'+categ">{{categ}}</a>
                 </li>
             </ul>
         </nav>
@@ -15,7 +15,7 @@ export default {
     name: "NavBar",
     data() {
         return {
-            categories: ["Home", "Projects", "About", "Contact"],
+            categories: ["home","about", "projects",  "contact"],
             active_idx: 0
         }
 
