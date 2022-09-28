@@ -24,6 +24,8 @@ export default {
         activate(i) {
             this.active_idx = i
         }
+
+        
     }
 }
 </script>

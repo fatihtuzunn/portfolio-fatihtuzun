@@ -20,7 +20,7 @@
 
                         </p>
 
-                        <h6>Tools<span class="glyphicon glyphicon-cog"></span></h6>
+                        <h6>Tools</h6>
                         <ul class="tools vertical-list">
                             <li>Vue</li>
                             <li>Video.js</li>
@@ -35,7 +35,7 @@
 
                     <img src="../assets/img/educourse-Screenshot.png"
                         alt="Educourse Education Project">
-                    <h4 class="heading"><span class="glyphicon glyphicon-hand-up"></span>Educourse Education Project</h4>
+                    <h4 class="heading">Educourse Education Project</h4>
                 </div>
                 <!-- END OF OVERLAY -->
             </section>
@@ -50,7 +50,7 @@
                             Designed using the Vuetify library - a simple page can be used as a personal portfolio website.
                         </p>
 
-                        <h6>Tools<span class="glyphicon glyphicon-cog"></span></h6>
+                        <h6>Tools</h6>
                         <ul class="tools vertical-list">
                             <li>Vue</li>
                             <li>Vuetify</li>
@@ -62,7 +62,7 @@
 
                     <img src="../assets/img/vuetify-resume-Screenshot.png"
                         alt="Vuetify Resume">
-                    <h4 class="heading"><span class="glyphicon glyphicon-hand-up"></span> Vuetify Personal Resume Website</h4>
+                    <h4 class="heading"> Vuetify Personal Resume Website</h4>
                 </div>
                 <!-- END OF OVERLAY -->
             </section>
@@ -80,7 +80,7 @@
                             can upload a media(video or photograph).
                         </p>
 
-                        <h6>Tools<span class="glyphicon glyphicon-cog"></span></h6>
+                        <h6>Tools</h6>
                         <ul class="tools vertical-list">
                             <li>Node.js</li>
                             <li>CSS3</li>
@@ -90,8 +90,8 @@
                     </div>
                     <!-- END OF DESCRIPTION -->
 
-                    <img src="../assets/img/node-media-catalog-Screenshot.png" alt="Quote Machine in Action">
-                    <h4 class="heading"><span class="glyphicon glyphicon-hand-up"></span>Media Catalog Project</h4>
+                    <img src="../assets/img/node-media-catalog-Screenshot.png" alt="Media Catalog Project">
+                    <h4 class="heading">Media Catalog Project</h4>
                 </div>
                 <!-- END OF OVERLAY -->
             </section>
@@ -109,7 +109,7 @@
                             It was designed with the aesthetic concern of any model agency in mind.
                         </p>
 
-                        <h6>Tools<span class="glyphicon glyphicon-cog"></span></h6>
+                        <h6>Tools</h6>
                         <ul class="tools vertical-list">
                             <li>Bootstrap</li>
                             <li>JavaScript</li>
@@ -119,7 +119,7 @@
                     <!-- END OF DESCRIPTION -->
 
                     <img src="../assets/img/ft-model-Screensho.png" alt="Ft model agency">
-                    <h4 class="heading"><span class="glyphicon glyphicon-hand-up"></span>FT Model Agency</h4>
+                    <h4 class="heading">FT Model Agency</h4>
                 </div>
                 <!-- END OF OVERLAY -->
             </section>
@@ -135,17 +135,13 @@
 
 
 
-                            Was achieved using the Google Maps API to geocode user search terms, data was then retrieved
-                            from the Forecast IO API. Users can click on any day in the seven day cycle to get a quick
-                            summary on the predicated forecast.
-                            Made using AngularJS and AJAX using multiple asynchronous API calls within a closure. The
-                            search functionality made use of the ng-model and filter feature of the AngularJS Framework.
+                            
+                            Made using Vue.
                         </p>
 
-                        <h6>Tools<span class="glyphicon glyphicon-cog"></span></h6>
+                        <h6>Tools</h6>
                         <ul class="tools vertical-list">
-                            <li>Bootstrap</li>
-                            <li>JavaScript</li>
+                            <li>Vue</li>
                             <li>HTML &amp; CSS</li>
                         </ul>
                     </div>
@@ -153,7 +149,7 @@
 
                     <img src="../assets/img/personal-resume.png"
                         alt="Twitchtv API screenshot">
-                    <h4 class="heading"><span class="glyphicon glyphicon-hand-up"></span>Personal Resume Website</h4>
+                    <h4 class="heading">Personal Resume Website</h4>
                 </div>
                 <!-- END OF OVERLAY -->
             </section>
@@ -166,13 +162,10 @@
                     <!-- DESCRIPTION -->
                     <div class="description">
                         <p>
-                            Created using a mixture of pure JavaScript and JQuery, users are challenged to remember a
-                            sequence of steps based on the popular memory game Simon Says. Users also have the ability
-                            to swap between the normal Simon Says with default sounds and also the Animal Simon Says
-                            with fitting animal effects.
+                            Instagram clone made with Bootstrap.
                         </p>
 
-                        <h6>Tools<span class="glyphicon glyphicon-cog"></span></h6>
+                        <h6>Tools</h6>
                         <ul class="tools vertical-list">
                             <li>Bootstrap</li>
                             <li>CSS</li>
@@ -183,7 +176,7 @@
 
                     <img src="../assets/img/instagram-clone.png"
                         alt="Simon Says Game">
-                    <h4 class="heading"><span class="glyphicon glyphicon-hand-up"></span>Instagram Clone</h4>
+                    <h4 class="heading">Instagram Clone</h4>
                 </div>
                 <!-- END OF OVERLAY -->
             </section>
@@ -191,30 +184,7 @@
 
             <!-- COLUMN 1 -->
             <!-- SECTION -->
-            <section>
-                <!-- OVERLAY -->
-                <div class="overlay">
-                    <!-- DESCRIPTION -->
-                    <div class="description">
-                        <p>
-                            Made with a pure JavaScript. Players are free to choose whether they
-                            wish to play as X or O. 
-                        </p>
-
-                        <h6>Tools<span class="glyphicon glyphicon-cog"></span></h6>
-                        <ul class="tools vertical-list">
-                            <li>JavaScript</li>
-                            <li>HTML &amp; CSS</li>
-                        </ul>
-                    </div>
-                    <!-- END OF DESCRIPTION -->
-
-                    <img src="https://res.cloudinary.com/dj7k0lade/image/upload/v1526688951/codepen/portfolio/tictactoe.png"
-                        alt="Tic Tac Toe Screenshot">
-                    <h4 class="heading"><span class="glyphicon glyphicon-hand-up"></span>Tic Tac Toe</h4>
-                </div>
-                <!-- END OF OVERLAY -->
-            </section>
+          
             <!-- END OF SECTION -->
 
             <!-- COLUMN 2 -->
@@ -229,7 +199,7 @@
                             created using React.
                         </p>
 
-                        <h6>Tools<span class="glyphicon glyphicon-cog"></span></h6>
+                        <h6>Tools</h6>
                         <ul class="tools vertical-list">
                             <li>React</li>
                             <li>JavaScript</li>
@@ -241,7 +211,7 @@
 
                     <img src="../assets/img/memory-game.png"
                         alt="Chatterbox ">
-                    <h4 class="heading"><span class="glyphicon glyphicon-hand-up"></span>React Memory Game</h4>
+                    <h4 class="heading">React Memory Game</h4>
                 </div>
                 <!-- END OF OVERLAY -->
             </section>
@@ -321,7 +291,7 @@ h6 {
 
 
 #portfolio {
-
+    
     padding-bottom: 80px;
 }
 
@@ -335,25 +305,22 @@ h6 {
 
 #portfolio .heading {
     color: #F0F0F0;
-    padding: 50px 15px 15px 15px;
+    padding: 0;
     text-align: center;
     position: absolute;
     font-size: 18px;
     letter-spacing: 2px;
+    position: relative;
+    margin: 100px auto 0 auto;
+    
 }
 
-#portfolio .heading span {
-    color: #635757;
-    display: block;
-    margin: 40px 0px;
-    font-size: 200%;
-}
 
 #portfolio .description {
     position: absolute;
-    top: 0px;
-    left: 0px;
-    padding: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #portfolio .description>* {
@@ -373,9 +340,7 @@ h6 {
     width: 100%;
 }
 
-.description span {
-    margin-left: 10px;
-}
+
 
 .description .tools {
     margin-top: 20px;
@@ -409,17 +374,14 @@ h6 {
     position: relative;
     padding-bottom: 0px;
     min-height: 550px;
-    overflow: auto;
+    overflow: hidden;
 }
 
 #portfolio .description h4 {
     color: white;
 }
 
-#portfolio .heading {
-    position: relative;
-    margin: 0 auto;
-}
+
 
 
 
@@ -433,14 +395,7 @@ h6 {
     transition: top .5s;
 }
 
-#portfolio section:hover .overlay .heading span {
-    -webkit-transform: rotate(180deg);
-    position: relative;
-    top: -80px;
-    left: -30px;
-    color: rgba(4, 14, 22, .83);
-    ;
-}
+
 
 
 #portfolio section:hover .overlay .description>* {
@@ -449,7 +404,8 @@ h6 {
 
 #portfolio section:hover .overlay .heading {
     position: absolute;
-    top: -60px;
+    top: -10%;
+    left: 10%;
     transition: top .9s;
 }
 
