@@ -180,7 +180,8 @@ export default {
 .content h1 {
   color: var(--primary);
   font-weight: bold;
-  padding-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 20px !important;
 }
 
 .content p {

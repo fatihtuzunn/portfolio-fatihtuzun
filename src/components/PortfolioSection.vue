@@ -8,12 +8,12 @@
 
 
         <div class="container">
-            <section>
+            <section >
                 <!-- OVERLAY -->
-                <div class="overlay">
+                <div class="overlay" @click="project1">
                     <!-- DESCRIPTION -->
                     <div class="description">
-                        <p>
+                        <p >
                             Designed using Sketch, The project was designed as a video platform for
                             education.
                             I used dotNET for the back-end, Vue for the frontend, and finally MongoDB as a database.
@@ -43,7 +43,7 @@
 
             <section>
                 <!-- OVERLAY -->
-                <div class="overlay">
+                <div class="overlay" @click="project2">
                     <!-- DESCRIPTION -->
                     <div class="description">
                         <p>
@@ -71,7 +71,7 @@
             <!-- SECTION -->
             <section>
                 <!-- OVERLAY -->
-                <div class="overlay">
+                <div class="overlay" @click="project3">
                     <!-- DESCRIPTION -->
                     <div class="description">
                         <p>
@@ -101,7 +101,7 @@
             <!-- SECTION -->
             <section>
                 <!-- OVERLAY -->
-                <div class="overlay">
+                <div class="overlay" @click="project4">
                     <!-- DESCRIPTION -->
                     <div class="description">
                         <p>
@@ -128,7 +128,7 @@
             <!-- SECTION -->
             <section>
                 <!-- OVERLAY -->
-                <div class="overlay">
+                <div class="overlay" @click="project5">
                     <!-- DESCRIPTION -->
                     <div class="description">
                         <p>
@@ -158,7 +158,7 @@
             <!-- SECTION -->
             <section>
                 <!-- OVERLAY -->
-                <div class="overlay">
+                <div class="overlay" @click="project6">
                     <!-- DESCRIPTION -->
                     <div class="description">
                         <p>
@@ -182,16 +182,10 @@
             </section>
             <!-- END OF SECTION -->
 
-            <!-- COLUMN 1 -->
-            <!-- SECTION -->
-          
-            <!-- END OF SECTION -->
-
-            <!-- COLUMN 2 -->
-            <!-- SECTION -->
+           
             <section>
                 <!-- OVERLAY -->
-                <div class="overlay">
+                <div class="overlay" @click="project7">
                     <!-- DESCRIPTION -->
                     <div class="description">
                         <p>
@@ -226,6 +220,30 @@
 
 <script>
 export default {
+    name:"PortfolioSection",
+    methods:{
+        project1(){
+            window.open("https://github.com/fatihtuzunn/educoursePROJECT")
+        },
+        project2(){
+            window.open("https://github.com/fatihtuzunn/vuetify-resume")
+        },
+        project3(){
+            window.open("https://github.com/fatihtuzunn/media_catalog_project")
+        },
+        project4(){
+            window.open("https://github.com/fatihtuzunn/ft-model-agency")
+        },
+        project5(){
+            window.open("https://github.com/fatihtuzunn/portfolio-fatihtuzun")
+        },
+        project6(){
+            window.open("https://github.com/fatihtuzunn/Instagram-Clone_Bootstrap_Patika.dev")
+        },
+        project7(){
+            window.open("https://github.com/fatihtuzunn/react-matching_game")
+        }
+    }
 
 }
 </script>
@@ -254,7 +272,7 @@ h1 {
     color: var(--primary);
     font-weight: bold;
     text-transform: uppercase;
-    padding-top: 100px;
+    padding: 100px 0 100px 0;
 }
 
 
