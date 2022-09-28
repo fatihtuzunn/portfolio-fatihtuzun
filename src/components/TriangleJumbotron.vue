@@ -166,7 +166,7 @@ export default {
     right: 0;
     background: var(--backg);
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+    
     /* Chrome 10-25, Safari 5.1-6 */
     /* background: linear-gradient(to right, #333399, #ff00cc); */
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */

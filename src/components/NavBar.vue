@@ -15,7 +15,7 @@ export default {
     name: "NavBar",
     data() {
         return {
-            categories: ["home","about", "projects",  "contact"],
+            categories: ["home","about", "projects"],
             active_idx: 0
         }
 
