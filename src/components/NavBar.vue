@@ -110,4 +110,11 @@ export default {
     right: 0;
     bottom: 0;
 }
+
+@media screen and (max-width: 1200px) {
+  .nav{
+    display: none;
+  }
+}
+
 </style>

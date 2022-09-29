@@ -443,6 +443,7 @@ h6 {
 
     #portfolio section {
         width: 100%;
+        margin: 10px 0;
     }
 
     #portfolio .description>* {

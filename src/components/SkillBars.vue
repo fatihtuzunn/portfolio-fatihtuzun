@@ -316,6 +316,8 @@ export default {
     display: block;
     font-size: 3.5rem;
     width: 100%;
+    padding:0;
+    margin: 0;
     
   }
   .intro{
