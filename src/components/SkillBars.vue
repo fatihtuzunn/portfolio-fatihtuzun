@@ -311,12 +311,39 @@ export default {
 
 /* mobile styles */
 
-@media (min-width: 100px) and (max-width: 400px) {
-  .content {
-    max-width: 300px;
+@media screen and (max-width: 1200px) {
+  .row {
+    display: block;
+    font-size: 3.5rem;
+    width: 100%;
+    
+  }
+  .intro{
+    padding: 0;
   }
 
+  .col{
+    padding: 0;
+    max-width: 100%;
+  }
 
+  .fullname{
+    flex-direction: column;
+  }
+
+  .avatar{
+    height: 20rem;
+    width: 20rem;
+    padding: 0;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  .nameapp {
+    font-size: 2.5rem;
+    max-width: 400px;
+  }
 }
 </style>
 

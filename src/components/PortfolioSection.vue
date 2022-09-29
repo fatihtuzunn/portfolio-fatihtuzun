@@ -431,63 +431,9 @@ h6 {
 
 /* Media Queries */
 
-@media screen and (max-width: 1200px) {
-    #portfolio [class^="col"] section {
-        width: 80%;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 10px;
-        min-height: 400px;
-    }
 
-    #portfolio .overlay {
-        width: 100%;
-        height: auto;
-    }
-
-    #portfolio img {
-        width: 100%;
-        height: auto;
-    }
-
-    #portfolio section:hover .overlay .heading span {
-        -webkit-transform: rotate(90deg);
-        top: 70px;
-        left: -240px;
-        position: relative;
-    }
-}
 
 @media screen and (max-width: 790px) {
-    body {
-        font-size: 18px;
-        text-align: center;
-    }
-
-
-    #portfolio .description p {
-        margin-top: 40px;
-    }
-
-    #portfolio section {
-        font-size: 10px;
-    }
-
-    #portfolio .overlay>* {
-        font-size: 200%;
-    }
-
-    #portfolio p,
-    h6 {
-        text-align: left;
-    }
-
-    #contact textarea {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 570px) {
 
 
 
@@ -509,34 +455,37 @@ h6 {
 
     #portfolio .heading {
         display: table-header-group;
-        font-size: 180%;
-        text-align: left;
+        font-size: 120%;
+       
     }
 
     #portfolio .overlay {
         min-height: auto;
         padding: 20px;
+        
     }
 
     #portfolio .description {
-        top: 100px;
-        position: static;
+        
+        position:relative;
+        
     }
 
     #portfolio section {
         min-height: auto;
     }
 
-    #portfolio section:hover .overlay .heading {
+    #portfolio section:hover .overlay .heading, 
+    #portfolio section:hover .description,
+    #portfolio section:hover .overlay img
+     {
         position: relative;
-        top: -0px;
+        transition: none;
         color: white;
         -webkit-transition: none;
     }
 
-    #portfolio .heading span {
-        display: none;
-    }
+    
 }
 
 @media screen and (max-width: 480px) {

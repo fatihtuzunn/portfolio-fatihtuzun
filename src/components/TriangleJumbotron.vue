@@ -392,4 +392,15 @@ export default {
     height: 45px;
     transform: rotate(-40deg);
 }
+
+
+/* Responsive */
+
+@media (max-width: 992px) {
+
+    .jumbotron h1 {
+    font-size: 4rem !important; 
+}
+
+}
 </style>

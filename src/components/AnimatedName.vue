@@ -73,14 +73,19 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .name {
+  .nameapp {
+    
     font-size: 3.5rem;
     max-width: 400px;
+  }
+
+  .fullname{
+    flex-direction: column;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .name {
+  .nameapp {
     font-size: 2.5rem;
     max-width: 400px;
   }

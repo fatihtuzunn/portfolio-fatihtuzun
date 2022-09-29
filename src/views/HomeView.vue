@@ -12,13 +12,10 @@
     </section>
 
     <section class="section" id="projects">
-<PortfolioSection />
+      <PortfolioSection />
     </section>
-    
-    <section class="section" id="contact">
-      s
 
-    </section>
+
   </div>
 </template>
 
@@ -36,15 +33,21 @@ export default {
     NavBar,
     SkillBars,
     PortfolioSection
-}
+  }
 }
 </script>
 
 <style>
-.section{
-  
+.section {
+
   height: 100vh;
 }
 
+
+@media screen and (max-width: 1200px) {
+  .section{
+    height: 0%;
+  }
+}
 
 </style>
