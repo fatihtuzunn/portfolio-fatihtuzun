@@ -46,7 +46,7 @@ export default {
 
 @media screen and (max-width: 1200px) {
   .section{
-    height: 0%;
+    height: 100%;
   }
 }
 
