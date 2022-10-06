@@ -272,7 +272,7 @@ h1 {
     color: var(--primary);
     font-weight: bold;
     text-transform: uppercase;
-    padding: 100px 0 100px 0;
+    padding: 400px 0 50px 0;
 }
 
 

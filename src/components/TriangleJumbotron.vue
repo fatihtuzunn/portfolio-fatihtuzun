@@ -173,7 +173,7 @@ export default {
 }
 
 .jumbotron h1 {
-    margin-top: 8rem;
+    
     line-height: .9;
     font-weight: bold;
     display: block;
@@ -195,6 +195,7 @@ export default {
     right: 50%;
     top: 100%;
     cursor: pointer;
+    margin-top:5rem;
 }
 
 .rectangle-1 {
